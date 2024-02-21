@@ -22,7 +22,7 @@ func run() {
 		})
 	})
 
-	err := router.Run(":8099")
+	err := router.Run()
 	if err != nil {
 		log.Fatalln("開啟 Gin 服務失敗:", err.Error())
 	}
